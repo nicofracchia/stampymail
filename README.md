@@ -1,19 +1,18 @@
-# stampymail
-<b>Prueba Técnica StampyMail</b>
+# Technical test
 
 
-Hay que poner la ruta que corresponda en el archivo <b>public/.htaccess</b> para que funcionen las rutas.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 4: RewriteBase /stampymail/public
+You have to put the corresponding path in the <b>public/.htaccess</b> file for the paths to work.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 4: RewriteBase /stampymail/public
 <br><br>
-Los datos de conexión a la base de datos se modifican en las constantes del archivo <b>src/init.php</b> (También se puede modificar el valor de la contante "RESULTADOSXPAGINA" para cambiar la cantidad de resultados que muestra el listado de usuarios.<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 4: define('HOSTDB', 'localhost');<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 5: define('USERDB', 'root');<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 6: define('PASSDB', '');<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 7: define('DB', 'stampymail');<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Línea 10: define('RESULTADOSXPAGINA', 5);<br>
+The connection data to the database is modified in the constants of the file <b>src/init.php</b> (You can also modify the value of the constant "RESULTSXPAGINA" to change the amount of results that the list of users shows.).<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 4: define('HOSTDB', 'localhost');<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 5: define('USERDB', 'root');<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 6: define('PASSDB', '');<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 7: define('DB', 'stampymail');<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; Line 10: define('RESULTADOSXPAGINA', 5);<br>
 <br><br>
-Se incluye el archivo <b>usuarios.sql</b> para crear la tabla con los campos necesarios, incluye la inserción de un usuario para poder loguearse en el sistema con estas credenciales:<br>
-      <b>Usuario:</b> admin@admin.com<br>
+The file <b>usuarios.sql</b> is included to create the table with the necessary fields, it includes the insertion of a user to be able to log into the system with these credentials:<br>
+      <b>User:</b> admin@admin.com<br>
       <b>Password:</b> 123<br>
 <br><br>
-Todo el desarrollo fue hecho desde cero con patron MVC y sin librerias ni frameworks.
+All development was done from scratch with an MVC pattern and without libraries or frameworks.
